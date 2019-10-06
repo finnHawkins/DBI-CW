@@ -1,0 +1,189 @@
+/* === formats page appearance === */
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("bg2.jpg");
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.content {
+  margin: 5%;
+  background-color: white;
+}
+
+.data {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 10px 5px;
+}
+
+.details {
+  margin-top: 20px;
+  overflow: auto;
+  height: 300px;
+}
+
+a:hover {
+  color: black;
+}
+
+a, a:visited {
+  color: gray;
+}
+
+p {
+  text-align: center;
+}
+
+#error {
+  text-align: center;
+  padding: 5px;
+}
+
+/* === formats navbar appearance === */
+
+.menu {
+  margin: 0;
+  padding: 0;
+  background-color: #fce1e6;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Josefin Slab', serif;
+  border: solid 2px white;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+a.active, li a:hover {
+  color: white;
+  background-color: #fce1e6;
+}
+
+a.active:hover {
+  background-color: white;
+  color: #fce1e6;
+}
+
+/* === formats table appearance === */
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #efc3d0;
+  color: white;
+}
+
+table {
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 99%;
+}
+
+th, td {
+  padding: 5px;
+}
+
+/* === formats search box appearance ===*/
+
+#filter input {
+  font-size: 14px;
+  border: 1px solid black;
+  margin: 20px 0px;
+  color: silver;
+  letter-spacing: 1px;
+  padding: 5px 5px 5px 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: url('glass.png') white left center no-repeat;
+  background-size: 20px 20px;
+  width: 200px;
+}
+
+/* === edits button appearance ===*/
+
+button, .btn {
+  margin: 10px 0px;
+  font-size: 16px;
+  border: 1px black solid;
+  background-color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 75px;
+}
+
+.btn:hover {
+  background-color: #fce1e6;
+}
+
+/* === formats scrollbar === */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: silver;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fce1e6;
+}
+
+/* === formats form appearance */
+
+.edit, .ebtn {
+  border: 0;
+  background-color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: gray;
+  display: inline-block;
+}
+
+label, input, select {
+  display: inline-block;
+}
+
+label {
+  width: 35%;
+  text-align: right;
+}
+
+label + input, label + select {
+  width: 30%;
+  margin: 5px 10px;
+}
+
+.btnhold, .back {
+  text-align: center;
+}
+
+input[type=text] {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+input {
+  font-size: 16px;
+}

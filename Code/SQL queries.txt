@@ -1,0 +1,39 @@
+//HOMEPAGE
+SELECT COUNT(*) FROM tbl_artist;
+SELECT COUNT(*) FROM tbl_cd;
+SELECT COUNT(*) FROM tbl_track;
+
+//ARTISTS
+SELECT * FROM tbl_artist;
+SELECT * FROM tbl_artist WHERE artName LIKE "%var%";
+
+//ALBUMS
+SELECT * FROM tbl_cd;
+SELECT * FROM tbl_cd WHERE cdName LIKE "%var%";
+
+//TRACKS
+SELECT trID, trName, artName, cdName, trLength FROM tbl_track;
+SELECT * FROM tbl_track WHERE trName LIKE "%var%";
+**MAYBE USE NATURAL JOIN, EH**
+
+
+
+//EDIT ARTIST
+SELECT * FROM tbl_artist WHERE artID = var;
+INSERT INTO tbl_artist (artName) VALUES vars;
+UPDATE tbl_artist SET artName=var WHERE artID=var;
+DELETE * FROM tbl_artist WHERE artID=var;
+
+//EDIT ALBUM
+SELECT * FROM tbl_cd WHERE cdID = var;
+INSERT INTO tbl_cd (artID, cdTitle, cdPrice, cdGenre, cdNumTracks) VALUES vars;
+UPDATE tbl_cd SET artID=var, cdTitle=var, cdPrice=var, cdGenre=var, cdNumTracks=var WHERE cdID=var;
+DELETE * FROM tbl_cd WHERE cdID=var;
+SELECT ArtName FROM tbl_artist SORT BY Asc;
+
+//EDIT TRACK
+SELECT * FROM tbl_track WHERE trID = var;
+INSERT INTO tbl_track (trName, trLength) VALUES vars;
+UPDATE tbl_track SET trName=var, trLength=var WHERE trID=var;
+DELETE * FROM tbl_track WHERE trID=var;
+SELECT cdTitle FROM tbl_cd SORT BY Asc;
